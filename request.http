@@ -1,0 +1,37 @@
+###
+GET http://localhost:8080/cars
+
+###
+GET http://localhost:8080/cars/1
+
+###
+GET http://localhost:8080/cars/2
+
+###
+GET http://localhost:8080/cars/5
+
+
+###
+POST http://localhost:8080/cars
+Content-Type: application/json
+
+{
+  "mark": "Fiat",
+  "model": "500",
+  "color": "White",
+  "productionYear": 2015
+}
+
+###
+PUT http://localhost:8080/cars/1
+Content-Type: application/json
+
+{
+  "mark": "Kia",
+  "model": "Cee'd",
+  "color": "White",
+  "productionYear": 2015
+}
+
+###
+DELETE http://localhost:8080/cars/2
